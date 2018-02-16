@@ -1,0 +1,223 @@
+html, body {
+  max-width: 100%;
+}
+
+.navbar {
+  border-bottom: 1px solid white;
+}
+
+.navigation {
+  min-height: 150px;
+}
+
+.navbar, .nav-container, .navbar-brand, .collpase {
+  min-height: 83px;
+}
+
+.navbar.fixed {
+  position: fixed;
+  min-width: 100%;
+  z-index: 1;
+  -webkit-transition: background 0.5s;
+  background: white;
+  border-bottom: 1px solid #04cee1;
+}
+
+.navbar.not-fixed {
+  -webkit-transition: background 1s;
+}
+
+.navbar-brand , .nav>li>a {
+  text-transform: uppercase;
+  color: white;
+}
+
+.navbar-brand.fixed, .nav>li>a.fixed {
+  color: #326390;
+  -webkit-transition: color 1s;
+}
+
+.navbar-brand img {
+  display: inline-block;
+  height: 50px;
+  padding: 10px;
+  margin-right: 5px;
+  border: 2px solid white;
+  border-radius: 40%;
+  background-size: 400% 400%;
+}
+
+.nav>li {
+  padding: 0;
+}
+
+.navbar-brand, .nav>li>a {
+  font-weight: 600;
+}
+
+.navbar-brand:hover, .nav>li>a:hover {
+  background: none;
+  color: white;
+}
+
+.navbar-brand.fixed:hover, .nav>li>a.fixed:hover {
+  color: #00c0d3;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background: none;
+}
+
+.navbar-toggle {
+  margin-top: 21px;
+  border: 1px solid white;
+}
+
+.navbar-toggle.fixed {
+  border-color: #0baab9;
+  -webkit-transition: border-color 1s;
+}
+
+.icon-bar {
+  border: 1px solid white;
+}
+
+.icon-bar.fixed {
+  border-color: #0baab9;
+  -webkit-transition: border-color 1s;
+}
+
+.social-media a {
+  display: inline-block !important;
+  font-size: 25px;
+}
+
+@media(min-width: 415px) {
+
+  .navigation {
+    min-height: 250px;
+  }
+
+  .nav>li {
+    padding: 15px 0;
+  }
+
+  .icon-right {
+    float: right;
+  }
+}
+
+/* HEADER */ /* HEADER */ /* HEADER */
+/* HEADER */ /* HEADER */ /* HEADER */
+/* HEADER */ /* HEADER */ /* HEADER */
+
+.iphone1 {
+  margin: 0 auto;
+}
+
+.ctAction, .ctAction button {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.ctAction h3, .ctAction button {
+  margin-bottom: 25px;
+}
+
+@media(min-width: 415px) {
+
+  .description {
+    display: flex;
+  }
+
+}
+
+/* HOW IT WORKS */ /* HOW IT WORKS */ /* HOW IT WORKS */
+/* HOW IT WORKS */ /* HOW IT WORKS */ /* HOW IT WORKS */
+
+.howWorks {
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  padding: 25px;
+}
+
+.howWorks h1, .howInvest h1 {
+  margin: 50px 0;
+}
+
+.contentContainer {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 30px;
+  margin: 20px 0;
+}
+
+.contentContainer i {
+  font-size: 5em;
+}
+
+.contentContainer p {
+  font-size: 1.25em;
+}
+
+@media(min-width: 415px) {
+  .contentContainer {
+    min-height: 325px;
+  }
+}
+
+/* HOW TO INVEST */ /* HOW TO INVEST */
+/* HOW TO INVEST */ /* HOW TO INVEST */
+/* HOW TO INVEST */ /* HOW TO INVEST */
+
+.howInvest {
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px;
+}
+
+.iphone {
+  padding: 65px 0;  
+}
+
+
+
+
+
+
+
+
+@media(min-width: 414px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+@media(min-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media(max-width: 414px) {
+
+  section {
+    padding-bottom: 50px;
+  }
+
+}
+
+@media(min-width: 415px) {
+
+  section {
+    padding-bottom: 150px;
+  }
+
+}
