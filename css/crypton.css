@@ -6,7 +6,7 @@ html, body {
   border-bottom: 1px solid white;
 }
 
-.navigation {
+#navigation {
   min-height: 150px;
 }
 
@@ -94,7 +94,7 @@ html, body {
 
 @media(min-width: 415px) {
 
-  .navigation {
+  #navigation {
     min-height: 250px;
   }
 
@@ -138,14 +138,14 @@ html, body {
 /* HOW IT WORKS */ /* HOW IT WORKS */ /* HOW IT WORKS */
 /* HOW IT WORKS */ /* HOW IT WORKS */ /* HOW IT WORKS */
 
-.howWorks {
+#howWorks {
   margin: 0 auto;
   text-align: center;
   background: white;
   padding: 25px;
 }
 
-.howWorks h1, .howInvest h1 {
+#howWorks h1, #howInvest h1 {
   margin: 50px 0;
 }
 
@@ -177,20 +177,55 @@ html, body {
 /* HOW TO INVEST */ /* HOW TO INVEST */
 /* HOW TO INVEST */ /* HOW TO INVEST */
 
-.howInvest {
+#howInvest {
   margin: 0 auto;
   text-align: center;
   padding: 25px;
 }
 
 .iphone {
-  padding: 65px 0;  
+  padding: 65px 0;
 }
 
 
+/* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
+/* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
+/* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
 
+#footer {
+  padding: 0;
+}
 
+footer {
+  min-height: 83px;
+  -webkit-transition: background 1s;
+}
 
+.nav>li>.bottomicon {
+  -webkit-transition: color 1s;
+  color: #326390;
+}
+
+.nav>li>.bottomicon:hover {
+  -webkit-transition: color 1s;
+  color: #00c0d3;
+}
+
+.footer-container {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.crContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 83px;
+}
+
+.nav>footer>li>a {
+  color: white;
+}
 
 
 

@@ -30,7 +30,7 @@
 <body>
 
 
-<section class="navigation">
+<section id="navigation">
 
   <nav class="navbar not-fixed">
     <div class="container nav-container">
@@ -40,7 +40,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="./assets/brand/brand.png" alt="Cryptonex Logo" class="bg-modal-pattern">Cryptonex</a>
+        <a class="navbar-brand" href="#navigation"><img src="./assets/brand/brand.png" alt="Cryptonex Logo" class="bg-modal-pattern">Cryptonex</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav icon-right">
@@ -52,8 +52,8 @@
           </li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a href="#">How It Works</a></li>
-          <li><a href="#">Ways To Invest</a></li>
+          <li><a href="#howWorks">How It Works</a></li>
+          <li><a href="#howInvest">Ways To Invest</a></li>
         </ul>
       </div>
     </div>
@@ -62,7 +62,7 @@
 
 </section>
 
-<section class="header">
+<section id="header">
 
   <header>
 
@@ -84,7 +84,7 @@
 
 </section>
 
-<section class="howWorks">
+<section id="howWorks">
 
   <div class="container">
 
@@ -129,7 +129,7 @@
 
 </section>
 
-<section class="howInvest">
+<section id="howInvest">
   <div class="container">
 
     <h1>How To Invest</h1>
@@ -198,29 +198,71 @@
 
 </section>
 
+<section id="footer">
+
+  <footer>
+    <div class="container footer-container">
+
+      <div class="row">
+        <div class="col-xs-12 col-md-offset-4 col-md-4 crContainer">
+          <h5>© <script>new Date().getFullYear()>document.write(+new Date().getFullYear());</script> - CRYPTON HOLDINGS, LLC.</h5>
+        </div>
+        <ul class="nav icon-right">
+          <li class="col-xs-12 footer social-media">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope-o"></i></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+</section>
+
 </body>
 
   <script>
-    $(window).scroll(function () {
-      if ($(window).scrollTop() > 0) {
-        $('.navbar').removeClass('not-fixed');
-        $('.navbar').addClass('fixed');
-        $('.navbar-toggle').addClass('fixed');
-        $('.icon-bar').addClass('fixed');
-        $('.navbar-brand').addClass('fixed');
-        $('.nav > li > a').addClass('fixed');
-        $('.sticky-fix').css("background", "red");
-      }
-      else if ($(window).scrollTop() <= 1) {
-        $('.navbar').addClass('not-fixed');
-        $('.navbar').removeClass('fixed');
-        $('.navbar-toggle').removeClass('fixed');
-        $('.icon-bar').removeClass('fixed');
-        $('.navbar-brand').removeClass('fixed');
-        $('.nav > li > a').removeClass('fixed');
-        $('.sticky-fix').hide();
-      }
-    });
+
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 0) {
+          $('.navbar').removeClass('not-fixed');
+          $('.navbar').addClass('fixed');
+          $('.navbar-toggle').addClass('fixed');
+          $('.icon-bar').addClass('fixed');
+          $('.navbar-brand').addClass('fixed');
+          $('.nav>li>a').addClass('fixed');
+          $('#myNavbar > .nav > .social-media > a').addClass('fixed');
+        }
+        else if ($(window).scrollTop() <= 1) {
+          $('.navbar').addClass('not-fixed');
+          $('.navbar').removeClass('fixed');
+          $('.navbar-toggle').removeClass('fixed');
+          $('.icon-bar').removeClass('fixed');
+          $('.navbar-brand').removeClass('fixed');
+          $('.nav>li>a').removeClass('fixed');
+          $('#myNavbar > .nav > .social-media > a').removeClass('fixed');
+
+        }
+        $(window).on("scroll", function() {
+             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                 $('footer').css({background: 'white'});
+                 $('.footer.social-media > a').addClass('bottomicon');
+             }else{
+               $('footer').css({background: 'transparent'});
+               $('.footer.social-media > a').removeClass('bottomicon');
+             }
+         });
+      });
+      $(document).on('click', 'a[href^="#"]', function (event) {
+          event.preventDefault();
+
+          $('html, body').animate({
+              scrollTop: $($.attr(this, 'href')).offset().top - 40
+          }, 500);
+      });
 
 
   </script>
