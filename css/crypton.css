@@ -1,7 +1,3 @@
-html, body {
-  max-width: 100%;
-}
-
 .navbar {
   border-bottom: 1px solid white;
 }
@@ -29,7 +25,7 @@ html, body {
 
 .navbar-brand , .nav>li>a {
   text-transform: uppercase;
-  color: white;
+  /* color: white; */
 }
 
 .navbar-brand.fixed, .nav>li>a.fixed {
@@ -102,6 +98,9 @@ html, body {
     padding: 15px 0;
   }
 
+}
+
+@media(min-width: 767px) {
   .icon-right {
     float: right;
   }
