@@ -1,5 +1,47 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #0a0a56;
+}
+
+/* MODAL */ /* MODAL */ /* MODAL */
+/* MODAL */ /* MODAL */ /* MODAL */
+/* MODAL */ /* MODAL */ /* MODAL */
+
+#emailModal, #emailModal input, #emailModal button {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+#emailModal h3, #emailModal small {
+  font-weight: 600;
+  display: inline-block;
+  color: #3030da;
+}
+
+#submitEmail {
+  color: white;
+  background: #007cff;
+  border: 2px solid white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+padding-right: 17px;
+}
+
+/* NAVBAR */ /* NAVBAR */ /* NAVBAR */
+/* NAVBAR */ /* NAVBAR */ /* NAVBAR */
+/* NAVBAR */ /* NAVBAR */ /* NAVBAR */
+
 .navbar {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid transparent;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
 }
 
 #navigation {
@@ -14,9 +56,8 @@
   position: fixed;
   min-width: 100%;
   z-index: 1;
-  -webkit-transition: background 0.5s;
+  -webkit-transition: background 1s;
   background: white;
-  border-bottom: 1px solid #04cee1;
 }
 
 .navbar.not-fixed {
@@ -25,12 +66,10 @@
 
 .navbar-brand , .nav>li>a {
   text-transform: uppercase;
-  /* color: white; */
 }
 
 .navbar-brand.fixed, .nav>li>a.fixed {
   color: #326390;
-  -webkit-transition: color 1s;
 }
 
 .navbar-brand img {
@@ -45,6 +84,8 @@
 
 .nav>li {
   padding: 0;
+  text-align: center;
+  -webkit-transition: color 0.1s;
 }
 
 .navbar-brand, .nav>li>a {
@@ -53,7 +94,8 @@
 
 .navbar-brand:hover, .nav>li>a:hover {
   background: none;
-  color: white;
+  color: #194061;
+  -webkit-transition: color 1s;
 }
 
 .navbar-brand.fixed:hover, .nav>li>a.fixed:hover {
@@ -88,6 +130,12 @@
   font-size: 25px;
 }
 
+@media(max-width: 414px) {
+  .nav>li {
+    margin-bottom: 50px;
+  }
+}
+
 @media(min-width: 415px) {
 
   #navigation {
@@ -111,13 +159,27 @@
 /* HEADER */ /* HEADER */ /* HEADER */
 
 .iphone1 {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+}
+
+.openModal {
+  font-weight: 600;
+  color: white;
+  background: #007cff;
+  border: 2px solid white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -webkit-transition: background 0.5s;
+}
+
+.openModal:hover, .openModal:focus, .openModal:visited {
+  -webkit-transition: background 0.5s;
+  background: #004fa2;
+  color: white;
+
 }
 
 .ctAction, .ctAction button {
   text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -141,7 +203,7 @@
   margin: 0 auto;
   text-align: center;
   background: white;
-  padding: 25px;
+  padding: 25px 25px 75px;
 }
 
 #howWorks h1, #howInvest h1 {
@@ -149,13 +211,20 @@
 }
 
 .contentContainer {
+  background: white;
   min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid #d7d7ea;
   padding: 30px;
   margin: 20px 0;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(50, 99, 144, 0.54);
+  -webkit-transition: box-shadow 0.5s;
+}
+
+.contentContainer:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 30px 30px rgba(50, 99, 144, 0.54);
 }
 
 .contentContainer i {
