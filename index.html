@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,17 +19,17 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <!-- Bootstrap -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="css/sticky-footer-navbar.css" rel="stylesheet">
   <link rel="stylesheet" href="css/crypton.css">
 
 </head>
 <body>
-
 
 <section id="navigation">
 
@@ -42,13 +43,14 @@
         </button>
         <a class="navbar-brand" href="#navigation"><img src="./assets/brand/brand.png" alt="Cryptonex Logo" class="bg-modal-pattern">Cryptonex</a>
       </div>
+
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav icon-right">
           <li class='social-media'>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://www.facebook.com/getcrypton"  target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/getcrypton"  target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/getcrypton/"  target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="mailto:cryptonblase@gmail.com?Subject=Hello%20Blase!"><i class="fa fa-envelope-o"></i></a>
           </li>
         </ul>
         <ul class="nav navbar-nav">
@@ -56,11 +58,13 @@
           <li><a href="#howInvest">Ways To Invest</a></li>
         </ul>
       </div>
+
     </div>
   </nav>
 
 
 </section>
+
 
 <section id="header">
 
@@ -71,8 +75,9 @@
         <div class="col-xs-12 col-md-6 ctAction">
           <h1>Trading blockchain based currencies has never been easier.</h1>
           <h3>It's what you can do with them later that is truly revolutionary.</h3>
-          <button class="btn btn-lg">Gain Early Access</button>
+          <button class="btn btn-lg openModal" data-toggle="modal" data-target="#emailModal">Gain Early Access</button>
         </div>
+         <div class="clearfix visible-xs-block"></div>
         <div class="col-sx-12 col-md-offset-1 col-md-5">
           <img src="assets/images/iphone1.png" alt="Cryptonex iPhone1" class="img-responsive iphone1">
         </div>
@@ -93,7 +98,7 @@
     <div class="row categories">
 
       <div class="col-xs-12 col-md-4">
-        <div class="contentContainer">
+        <div class="contentContainer" onmouseenter="$('.fa-credit-card').animateCss('slideInLeft');">
           <div>
             <i class="fa fa-credit-card text-primary"></i>
             <h2>Securely Link A Card</h2>
@@ -103,7 +108,7 @@
       </div>
 
       <div class="col-xs-12 col-md-4">
-        <div class="contentContainer">
+        <div class="contentContainer" onmouseenter="$('.fa-money').animateCss('zoomOutUp');">
           <div>
             <i class="fa fa-money text-primary"></i>
             <h2>Make a Purchase</h2>
@@ -113,7 +118,7 @@
       </div>
 
       <div class="col-xs-12 col-md-4">
-        <div class="contentContainer">
+        <div class="contentContainer" onmouseenter="$('.fa-thumbs-o-up').animateCss('bounce');">
           <div>
             <i class="fa fa-thumbs-o-up text-primary"></i>
             <h2>Round Up Spare Change</h2>
@@ -147,7 +152,7 @@
           <div class="row">
 
             <div class="col-xs-12 col-md-6">
-              <div class="contentContainer">
+              <div class="contentContainer" onmouseenter="$('.fa-arrow-up').animateCss('slideOutUp');">
                 <div>
                   <i class="fa fa-arrow-up icon-light"></i>
                   <h2>Square Change Round-Ups</h2>
@@ -156,7 +161,7 @@
               </div>
             </div>
             <div class="col-xs-12 col-md-6">
-              <div class="contentContainer">
+              <div class="contentContainer" onmouseenter="$('.fa-repeat').animateCss('rotateOut');">
                 <div>
                   <i class="fa fa-repeat icon-light"></i>
                   <h2>Recurring Investments</h2>
@@ -170,7 +175,7 @@
           <div class="row">
 
             <div class="col-xs-12 col-md-6">
-              <div class="contentContainer">
+              <div class="contentContainer" onmouseenter="$('.fa-times-circle').animateCss('pulse');">
                 <div>
                   <i class="fa fa-times-circle icon-light"></i>
                   <h2>Custom Multipliers</h2>
@@ -179,7 +184,7 @@
               </div>
             </div>
             <div class="col-xs-12 col-md-6 icon-light">
-              <div class="contentContainer">
+              <div class="contentContainer" onmouseenter="$('.fa-btc').animateCss('flash');">
                 <div>
                   <i class="fa fa-btc"></i>
                   <h2>Crypto On Tap</h2>
@@ -209,10 +214,10 @@
         </div>
         <ul class="nav icon-right">
           <li class="col-xs-12 footer social-media">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://www.facebook.com/getcrypton" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/getcrypton" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/getcrypton/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="mailto:cryptonblase@gmail.com?Subject=Hello%20Blase!"><i class="fa fa-envelope-o"></i></a>
           </li>
         </ul>
       </div>
@@ -223,8 +228,57 @@
 </section>
 
 </body>
+<div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bg-modal-pattern">
+        <div class="modal-header">
+          <h3 class="modal-title" id="emailModalLabel">Cryptonex Waitlist</h3>
+          <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="my-auto text-center" id="confirmedEmail"></div>
+          <form id="emailForm">
+            <div class="form-group">
+              <input type="email" class="form-control text-dark" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="result"></small>
+              <small id="emailHelp" class="form-text text-light font-weight-light">We'll never share your email with anyone else.</small>
+            </div>
+            <button type="submit" id="submitEmail" class="btn btn-block btn-outline-light">Submit Email</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+
+$.fn.extend({
+  animateCss: function (animationName) {
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    this.addClass('animated ' + animationName).one(animationEnd, function () {
+      $(this).removeClass('animated ' + animationName);
+    });
+    return this;
+  }
+});
+
+</script>
 
   <script>
+
+      setTimeout(function() {
+          $('#emailModal').modal();
+      }, 1000);
+
+      $(document).on('click', 'a[href^="#"]', function (event) {
+          event.preventDefault();
+
+          $('html, body').animate({
+              scrollTop: $($.attr(this, 'href')).offset().top - 40
+          }, 500);
+      });
 
       $(window).scroll(function () {
         if ($(window).scrollTop() > 0) {
@@ -256,15 +310,12 @@
              }
          });
       });
-      $(document).on('click', 'a[href^="#"]', function (event) {
-          event.preventDefault();
 
-          $('html, body').animate({
-              scrollTop: $($.attr(this, 'href')).offset().top - 40
-          }, 500);
+      $('.nav a').on('click', function() {
+          $('.navbar-collapse').collapse('hide');
       });
 
-
   </script>
+
 
 </html>
