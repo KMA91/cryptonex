@@ -240,8 +240,8 @@
           <div class="my-auto text-center" id="confirmedEmail"></div>
           <form id="emailForm">
             <div class="form-group">
-              <input type="email" class="form-control text-dark" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="result"></small>
+              <input type="email" class="form-control text-dark" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+              <h3 id="result"></h3>
               <small id="emailHelp" class="form-text text-light font-weight-light">We'll never share your email with anyone else.</small>
             </div>
             <button type="submit" id="submitEmail" class="btn btn-block btn-outline-light">Submit Email</button>
@@ -251,6 +251,10 @@
     </div>
 </div>
 
+
+  <!-- fb database -->
+  <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+  <script src="./fire.js"></script>
 
   <script>
 
