@@ -1,5 +1,5 @@
 * {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Rubik', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,22 +9,70 @@ h1 {
   margin: 0;
 }
 
-body {
-  background: rgba(222, 120, 113, 0.5);
+/* body {
   background: linear-gradient(-45deg, #19b0d4, #3991e2, #f4f9fd, #33b9d8);
-  background-size: 600% 600%;
-  -webkit-animation: Gradient 11s ease infinite;
-  -moz-animation: Gradient 11s ease infinite;
-  animation: Gradient 11s ease infinite;
-}
+	background-size: 400% 400%;
+  -webkit-transition: background 2s;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+} */
 
 
 .bg-modal-pattern {
 	background: linear-gradient(-45deg, #19b0d4, #3991e2, #f4f9fd, #33b9d8);
 	background-size: 400% 400%;
+  -webkit-transition: background 15s ;
+  -moz-transition: background 15s ;
+  -ms-transition: background 15s ;
+  -o-transition: background 15s ;
+  transition: background 15s ;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
+}
+
+.bg-modal-pattern2 {
+	background: linear-gradient(-45deg, #eabcc1, #c24159, #f4f9fd, #ffccc6);
+	background-size: 400% 400%;
+  -webkit-transition: background 15s ;
+  -moz-transition: background 15s ;
+  -ms-transition: background 15s ;
+  -o-transition: background 15s ;
+  transition: background 15s ;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+.bg-text {
+	background: linear-gradient(-45deg, #ff0000, #004586, #0533ea, #000000);
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+.bg-text-reverse {
+	background: linear-gradient(-45deg, #000000, #004586, #0533ea, #ff0000);
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 @-webkit-keyframes Gradient {
