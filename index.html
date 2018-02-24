@@ -20,7 +20,7 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <!-- Bootstrap -->
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -266,25 +266,6 @@
         }
       });
 
-      $.fn.isOnScreen = function(){
-
-      	var win = $(window);
-
-      	var viewport = {
-      		top : win.scrollTop(),
-      		left : win.scrollLeft()
-      	};
-      	viewport.right = viewport.left + win.width();
-      	viewport.bottom = viewport.top + win.height();
-
-      	var bounds = this.offset();
-          bounds.right = bounds.left + this.outerWidth();
-          bounds.bottom = bounds.top + this.outerHeight();
-
-          return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
-
-      };
-
       // MODAL POP UP
 
       setTimeout(function() {
@@ -303,11 +284,6 @@
       // NAVBAR NOT-FIXED => FIXED // social media icon changes
 
       $(window).scroll(function () {
-
-        if($('#howInvest').isOnScreen()){
-          // $('body').addClass('bg-modal-pattern2');
-          // $('body').removeClass('bg-modal-pattern');
-        };
 
         if ($(window).scrollTop() > 0) {
           $('.navbar').removeClass('not-fixed');
